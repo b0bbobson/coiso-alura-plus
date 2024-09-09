@@ -3,11 +3,15 @@
     --cinza-secundario: #c0c0c0;
     --botao-azul: #167bf7;
     --cor-de-fundo: #00030c;
+    --fonte-principal:'inter';
 }
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: (var(--fonte-principal));
+    font-size: 16px;
+    font: weight 400px;
 }
 
 * {
@@ -18,8 +22,8 @@ body {
 
 .principal{
     background-image: url("img/Background.png");
-    background-repeat: no-repeat
-    background_size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .container{
@@ -34,9 +38,20 @@ body {
     padding: 1em;
     color: var(--branco-principal);
     display: block;
+    text-decoration:none ;
 }
 
 .botao_secundario{
     background-color: transparent;
     border: 2px solid var(--branco-principal);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color:var(--cinza-secundario);
+}
+
+.container__titulo{
+    font-size: 28px ;
+    font-weight: 700;    
 }
